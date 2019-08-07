@@ -22,7 +22,7 @@ public class Alien2 extends Alien {
 	
 	@Override
 	public String getImageName() {
-		return "resources/alien.png";
+		return "resources/invader1.png";
 	}
 	
 }
