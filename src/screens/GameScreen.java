@@ -71,17 +71,17 @@ public class GameScreen implements Screen {
             if (restarting || !win) return;
             
             restarting = true;
-            new Thread(() -> {
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                reset();
-                level = level.getNextLevel();
-                level.apply(aliens);
-                restarting = false;
-            }).start();
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            reset();
+            if (level.getNextLevel() != null) {
+            	level = level.getNextLevel();
+            	level.apply(aliens);
+            	restarting = false;
+            }
         }
     }
 
@@ -217,7 +217,7 @@ public class GameScreen implements Screen {
                 for (Alien a : aliens) {
                     a.setDirection(Alien.Direction.LEFT);
                     a.getPosition().y += ALIEN_DOWNWARD_Y;
-                    a.addMovementSpeed(5.0f);
+                    a.addMovementSpeed(8.0f);
                 }
                 break;
             } else if (x <= MARGIN_X && alien.getDirection() == Alien.Direction.LEFT) {
