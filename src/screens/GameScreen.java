@@ -5,6 +5,7 @@ import data.Level;
 import internal.Game;
 import internal.Screen;
 import objects.Alien;
+import objects.Alien2;
 import objects.Bomb;
 import objects.Bullet;
 import objects.Player;
@@ -29,6 +30,7 @@ public class GameScreen implements Screen {
     ArrayList<Bullet> bullets = new ArrayList<>();
     float bulletTime = 0.0f;
     ArrayList<Alien> aliens = new ArrayList<>();
+    ArrayList<Bullet> removedBullets = new ArrayList<>();
 
     boolean gameEnded = false;
     boolean win = false;
@@ -59,7 +61,6 @@ public class GameScreen implements Screen {
         gameEnded = false;
         win = false;
         bulletTime = 0.0f;
-        restarting = false;
     }
 
     @Override
@@ -68,6 +69,7 @@ public class GameScreen implements Screen {
             updateGameLogic(deltaTime);
         } else {
             if (restarting || !win) return;
+            
             restarting = true;
             new Thread(() -> {
                 try {
@@ -78,12 +80,14 @@ public class GameScreen implements Screen {
                 reset();
                 level = level.getNextLevel();
                 level.apply(aliens);
+                restarting = false;
             }).start();
         }
     }
 
     @Override
     public void render(GraphicsContext g) {
+    	
         g.drawImage(
                 player.getImage(),
                 player.getPosition().x,
@@ -91,7 +95,8 @@ public class GameScreen implements Screen {
                 player.getSize().width,
                 player.getSize().height);
 
-        for (Alien alien : aliens) { // Eats a lot of memory (foreach)
+        for (int i = 0; i < aliens.size(); i++) {
+        	Alien alien = aliens.get(i);
             g.drawImage(
                     alien.getImage(),
                     alien.getPosition().x,
@@ -169,7 +174,7 @@ public class GameScreen implements Screen {
                     if (bullet.collidesWith(alien)) {
                         aliens.remove(i);
                         bullets.remove(bullet);
-                        data.addAlienDestroyedScore();
+                        data.addScore(alien.getPoints());
                         break;
                     }
                 }
@@ -212,6 +217,7 @@ public class GameScreen implements Screen {
                 for (Alien a : aliens) {
                     a.setDirection(Alien.Direction.LEFT);
                     a.getPosition().y += ALIEN_DOWNWARD_Y;
+                    a.addMovementSpeed(5.0f);
                 }
                 break;
             } else if (x <= MARGIN_X && alien.getDirection() == Alien.Direction.LEFT) {
@@ -245,11 +251,18 @@ public class GameScreen implements Screen {
         // Update
         // TODO: Store the removed bullets in a separate array and use that as a reference to delete
         // everything from the main array.
+        removedBullets.clear();
         for (Bullet bullet : bullets) {
-            bullet.update(deltaTime);
+            
+        	bullet.update(deltaTime);
+            
             if (bullet.getPosition().y + bullet.getSize().height < 0) {
-                bullets.remove(bullet);
+            	removedBullets.add(bullet);
             }
+        }
+        
+        for (Bullet b : removedBullets) {
+        	bullets.remove(b);
         }
     }
 }

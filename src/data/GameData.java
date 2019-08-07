@@ -14,6 +14,12 @@ public class GameData {
     public void addAlienDestroyedScore() {
         score += 5;
     }
+    public void addAlien2DestroyedScore() {
+    	score += 10;
+    }
+    public void addScore(int score) {
+    	this.score += score;
+    }
     public void setScore(int score){
         this.score = score;
     }

@@ -5,7 +5,7 @@ import internal.Game;
 public class Alien extends GameObject {
     public static final float WIDTH = 22.0f;
     public static final float HEIGHT = 36.0f;
-    public static final float MOVEMENT_SPEED = 30.0f;
+    private float movement_speed = 40.0f;
     private Direction direction = Direction.RIGHT;
     private Bomb bomb;
 
@@ -15,7 +15,7 @@ public class Alien extends GameObject {
 
     @Override
     public void update(float deltaTime) {
-        position.x += MOVEMENT_SPEED * deltaTime * direction.value;
+        position.x += movement_speed * deltaTime * direction.value;
         updateBomb(deltaTime, Game.main);
     }
 
@@ -58,9 +58,17 @@ public class Alien extends GameObject {
             this.value = value;
         }
     }
+    
+    public void addMovementSpeed(float f) {
+    	movement_speed += f;
+    }
 
 	@Override
 	public String getImageName() {
 		return "resources/alien.png";
+	}
+	
+	public int getPoints() {
+		return 5;
 	}
 }
