@@ -2,7 +2,7 @@ package objects;
 
 import internal.Game;
 
-public class Alien extends Enemy {
+public class Alien extends GameObject {
     public static final float WIDTH = 22.0f;
     public static final float HEIGHT = 36.0f;
     public static final float MOVEMENT_SPEED = 30.0f;
@@ -58,4 +58,9 @@ public class Alien extends Enemy {
             this.value = value;
         }
     }
+
+	@Override
+	public String getImageName() {
+		return "resources/alien.png";
+	}
 }

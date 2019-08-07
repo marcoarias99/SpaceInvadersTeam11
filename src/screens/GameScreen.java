@@ -34,10 +34,6 @@ public class GameScreen implements Screen {
     boolean win = false;
     boolean restarting = false;
 
-    Image playerImage;
-    Image alienImage;
-    Image bulletImage;
-    Image bombImage;
     Font main;
 
     public GameScreen(Game g, Level level) {
@@ -50,10 +46,6 @@ public class GameScreen implements Screen {
         data = new GameData();
         player = new Player();
         player.getSize().set(Player.WIDTH, Player.HEIGHT);
-        playerImage = new Image("resources/player_ship.png");
-        alienImage = new Image("resources/alien.png");
-        bulletImage = new Image("resources/bullet.png");
-        bombImage = new Image("resources/bomb.png");
         main = new Font(32.0);
 
         reset();
@@ -93,7 +85,7 @@ public class GameScreen implements Screen {
     @Override
     public void render(GraphicsContext g) {
         g.drawImage(
-                playerImage,
+                player.getImage(),
                 player.getPosition().x,
                 player.getPosition().y,
                 player.getSize().width,
@@ -101,7 +93,7 @@ public class GameScreen implements Screen {
 
         for (Alien alien : aliens) { // Eats a lot of memory (foreach)
             g.drawImage(
-                    alienImage,
+                    alien.getImage(),
                     alien.getPosition().x,
                     alien.getPosition().y,
                     alien.getSize().width,
@@ -111,7 +103,7 @@ public class GameScreen implements Screen {
             Bomb b = alien.getBomb();
             if (b != null) {
                 g.drawImage(
-                        bombImage,
+                        b.getImage(),
                         b.getPosition().x,
                         b.getPosition().y,
                         b.getSize().width,
@@ -121,7 +113,7 @@ public class GameScreen implements Screen {
         }
         for (Bullet bullet : bullets) {
             if (bullet != null) {
-                g.drawImage(bulletImage,
+                g.drawImage(bullet.getImage(),
                         bullet.getPosition().x,
                         bullet.getPosition().y,
                         bullet.getSize().width,

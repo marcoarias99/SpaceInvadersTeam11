@@ -28,4 +28,9 @@ public class Player extends GameObject {
             position.x = Game.main.getWidth() - MARGIN_X - size.width / 2.0f;
         }
     }
+
+	@Override
+	public String getImageName() {
+		return "resources/player_ship.png";
+	}
 }

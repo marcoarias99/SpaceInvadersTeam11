@@ -1,6 +1,7 @@
 package internal;
 
 import data.Level1;
+import data.Level2;
 import screens.GameScreen;
 import javafx.application.Application;
 import javafx.scene.Scene;
