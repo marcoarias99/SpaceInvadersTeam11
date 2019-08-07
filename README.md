@@ -17,8 +17,8 @@ To be able to play this game a **Java JDK 8 System** is required. <a href  = "ht
 1) Open the computer's terminal </br>
 2) Locate the repository you downloaded inside the terminal </br>
 > Terminal: cd Download\SpaceInvadersTeam11-master </br>
-3) Compile: ./gradlew build </br>
-4) Run: ./gradlew run </br>
+3) Compile: javac Launcher.java </br>
+4) Run: java Launcher </br>
 
 ## Test Class
 For this game we have decided to create a Test class for the java class **Library** </br>
