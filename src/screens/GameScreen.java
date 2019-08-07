@@ -5,6 +5,7 @@ import data.Level;
 import internal.Game;
 import internal.Screen;
 import objects.Alien;
+import objects.Alien2;
 import objects.Bomb;
 import objects.Bullet;
 import objects.Player;
@@ -212,6 +213,7 @@ public class GameScreen implements Screen {
                 for (Alien a : aliens) {
                     a.setDirection(Alien.Direction.LEFT);
                     a.getPosition().y += ALIEN_DOWNWARD_Y;
+                    a.setMovementSpeed(5.0f);
                 }
                 break;
             } else if (x <= MARGIN_X && alien.getDirection() == Alien.Direction.LEFT) {
