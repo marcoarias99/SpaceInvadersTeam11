@@ -1,7 +1,7 @@
 package objects;
 
 public class Bullet extends GameObject {
-    public static final float SPEED = 300.0f;
+    public static final float SPEED = 430.0f;
     public static final float WIDTH = 10.0f;
     public static final float HEIGHT = 15.0f;
 

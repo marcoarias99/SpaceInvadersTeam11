@@ -25,4 +25,9 @@ public class Alien2 extends Alien {
 		return "resources/invader1.png";
 	}
 	
+	@Override
+	public int getPoints() {
+		return 10;
+	}
+	
 }

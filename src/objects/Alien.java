@@ -59,12 +59,16 @@ public class Alien extends GameObject {
         }
     }
     
-    public void setMovementSpeed(float f) {
+    public void addMovementSpeed(float f) {
     	movement_speed += f;
     }
 
 	@Override
 	public String getImageName() {
 		return "resources/alien.png";
+	}
+	
+	public int getPoints() {
+		return 5;
 	}
 }
