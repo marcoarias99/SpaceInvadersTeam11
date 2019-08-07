@@ -1,6 +1,6 @@
 # Team11: Galaxy Fighter
 This is the game of our game Galaxy Fighter repository for CPSC 233, Summer 2019.</br>
-This game is **based** on the **Space Invaders Original** game and it will be a simple animation game. The game will be written in **Java** as part of our project for CPSC 233 and will be written by a group of four students who are beggining to learn this language.</br>
+This game is **based** on the **Space Invaders Original** game and it will be a simple animation game. The game will be written in **Java** as part of our project for CPSC 233 and will be written by a group of four students who are beginning to learn this language.</br>
 
 ## System Requirments
 To be able to play this game a **Java JDK 8 System** is required. <a href  = "https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"> Click Here </a> to download a the Java System. </br>
