@@ -6,12 +6,12 @@ This game is based on the Space Invaders Original game and it will be a simple a
 To be able to play this game a **Java JDK 8 System** is required. <a href  = "https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"> Click Here </a> to download a the Java System. </br>
 
 ## Game Installation
-1) Go to the Code Repository under the <a href = "https://github.com/chadigarzeddine1/Team11">Main branch </a> </br>
+1) Go to the Code Repository under the <a href = "https://github.com/chadigarzeddine1/SpaceInvadersTeam11">Main branch </a> </br>
 2) Download the files under the main branch as a ZIP file </br>
 3) Extract files from ZIP file </br>
 > Could look like any of this two: </br>
-\Users\Username\Downloads\Team11-master </br> 
-\Users\Username\Downloads\Team11-demo3  </br>
+\Users\Username\Downloads\SpaceInvadersTeam11-master </br> 
+\Users\Username\Downloads\SpaceInvadersTeam11-demo3  </br>
 
 ### Terminal
 1) Open the computer's terminal </br>
@@ -22,15 +22,16 @@ To be able to play this game a **Java JDK 8 System** is required. <a href  = "ht
 
 ## Test Class
 For this game we have decided to create a Test class for the java class **Library** </br>
-Download <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/3507818/View"> JUnit 4</a> and <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/3507818/View"> Hamcrest</a> </br>
+Download <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/3507819/View"> JUnit 4</a> and <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/3507818/View"> Hamcrest</a> </br>
 1) To be able to test this class both **JUnit 4** and **Hamcrest** are needed </br>
 2) Put junit-4.12.jar and hamcrest-core-1.3.jar in a folder </br>
-3) Copy test code inside the folder </br>
-4) Compile: </br>
+3) Make a copy of test class inside the folder </br>
+4) Add Libary.java to the folder with the JUnit 4, Hamcrest and the test class
+5) Compile: </br>
 > Mac: javac -cp .:junit-4.12.jar:hamcrest-core-1.3.jar *Library.java  </br>
 > Windows: javac -cp .;junit-4.12.jar:hamcrest-core-1.3.jar * Library.java  </br>
 
-4) Run: </br>
+6) Run: </br>
 > Mac: java -cp .:junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore Library  </br>
 > Windows:  java -cp .;junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore Library  </br>
   
@@ -62,4 +63,3 @@ William Nguyen </br>
 Mohamed Mohamed </br>
 Chadi Garzeddine </br>
 Marco Arias </br>
-
