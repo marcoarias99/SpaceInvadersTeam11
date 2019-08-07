@@ -43,6 +43,7 @@ public class Game {
             @Override
             public void handle(long now) {
                 float diff = (now - prev) / 1000000000.0f;
+                diff = Math.min(diff, 1.0f/30.0f);
                 step(diff);
                 prev = now;
             }
