@@ -46,7 +46,7 @@ Download <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/35
 
 **v2.0** </br>
 - Incorporation of the GUI </br>
-- Imporvements to the game movement </br>
+- Improvements to the game movement </br>
 </br>
 
 **v3.0** </br>
