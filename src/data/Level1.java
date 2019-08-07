@@ -1,6 +1,7 @@
 package data;
 
 import objects.Alien;
+import objects.Alien2;
 
 import java.util.ArrayList;
 

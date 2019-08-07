@@ -6,7 +6,6 @@ public class Bullet extends GameObject {
     public static final float HEIGHT = 15.0f;
 
     public Bullet(int x, int y) {
-        super();
         initShot(x, y);
     }
 
@@ -18,4 +17,9 @@ public class Bullet extends GameObject {
     private void initShot(int x, int y) {
         getPosition().set(x, y);
     }
+
+	@Override
+	public String getImageName() {
+		return "resources/bullet.png";
+	}
 }
