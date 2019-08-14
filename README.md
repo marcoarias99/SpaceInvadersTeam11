@@ -46,7 +46,8 @@ Download <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/35
 > Windows:  java -cp .;junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore Library  </br>
   
 ### Controls
-- Press **"left"** or **"right"** arrows on the keyboard for **movement**  </br>
+- Press **"&#8594;"** for right movement
+- Press **"&#8592;"** for left movement </br>
 - Press the spacebar to **"shoot"**  </br>
 
 ## Versions
