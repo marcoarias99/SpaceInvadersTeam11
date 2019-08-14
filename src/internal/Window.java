@@ -14,6 +14,28 @@ import java.util.List;
 
 public class Window extends Application {
     public static final String TITLE = "Space Invaders";
+package internal;
+
+import java.util.List;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+import screens.GameScreen;
+//JavaFx Imports
+
+/*
+Windows class allows the openning of the file and the Data which 
+will be shown from the windows thanks to JavaFx import Application
+
+This class has basic information about what the window will look like 
+realting to it width and height.
+*/
+public class Window extends Application {
+    public static final String TITLE = "Space Invaders";
     Scene scene;
     GraphicsContext graphics;
     private int width;
@@ -35,6 +57,8 @@ public class Window extends Application {
         return graphics;
     }
 
+
+    //Basic infomation about parmeters that will be set opening the canvas
     @Override
     public void start(Stage primaryStage) throws Exception {
         List<String> args = getParameters().getRaw();
@@ -48,12 +72,14 @@ public class Window extends Application {
         root.getChildren().add(canvas);
         scene = new Scene(root, width, height);
 
+        // Name that will appear on the top center when windows opens 
         primaryStage.setScene(scene);
         primaryStage.setTitle("Space Invaders");
+        //Allows canvas to be opened
         primaryStage.show();
 
         Game game = new Game(this);
-        game.setScreen(new GameScreen(game, new Level1()));
+        game.setScreen(new MenuScreen(game));
         game.startGameLoop();
     }
 }
