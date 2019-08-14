@@ -31,6 +31,6 @@ public class Player extends GameObject {
 
 	@Override
 	public String getImageName() {
-		return "resources/player_ship.png";
+		return "resources/ship.gif";
 	}
 }

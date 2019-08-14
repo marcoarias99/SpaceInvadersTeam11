@@ -20,6 +20,6 @@ public class Bullet extends GameObject {
 
 	@Override
 	public String getImageName() {
-		return "resources/bullet.png";
+		return "resources/bomb.png";
 	}
 }
