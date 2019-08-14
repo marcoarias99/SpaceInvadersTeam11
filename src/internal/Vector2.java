@@ -1,5 +1,10 @@
 package internal;
 
+/* 
+Defines the postion according the their x and y coordinates for all 
+the objects inside the game: Aliens, Bullets and Player
+*/
+
 public class Vector2 {
     public float x, y;
 
