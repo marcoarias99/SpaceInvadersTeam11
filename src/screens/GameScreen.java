@@ -149,7 +149,7 @@ public class GameScreen implements Screen {
 			
 		}
 		if (gameEnded) {
-			if (game.getInput().isKeyPressed(KeyCode.SPACE)) {
+			if (game.getInput().isKeyPressed(KeyCode.ENTER)) {
 				game.setScreen(new GameScreen(game, new Level1()));
 			}
 		}
@@ -243,7 +243,7 @@ public class GameScreen implements Screen {
 				g.fillText("Game Over!", game.getWidth() * 0.5f, game.getHeight() * 0.3f);
 				drawGameInfo(g);
 				g.setFont(smallFont);
-				g.fillText("Press Space to Restart", game.getWidth() * 0.5f, game.getHeight() * 0.8f);
+				g.fillText("Press Enter to Restart", game.getWidth() * 0.5f, game.getHeight() * 0.8f);
 			}
 		}
 	}
