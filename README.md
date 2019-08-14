@@ -20,6 +20,15 @@ To be able to play this game a **Java JDK 8 System** is required. <a href  = "ht
 3) Compile: javac Launcher.java </br>
 4) Run: java Launcher </br>
 
+### Eclipse
+1) Download the files from the GitHub **Master** repository</br>
+2) Keep the files on Downloads file </br>
+3) Enter Eclipse and create a "New Project" under the "File" button </br>
+4) Name it as you wish </br>
+5) Go to Import --> General --> File System --> Browse --> Downloads --> SpaceInvadersTeam11-master --> src </br>
+6) Import every file from the src folder to the game </br>
+7) Go to the laucher class left click and go to "Run As" then **click** on Java Aplication </br>
+
 ## Test Class
 For this game we have decided to create a Test classes for the java classes **Game**,**Data** and **Window** </br>
 Download <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/3507819/View"> JUnit 4</a> and <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/3507818/View"> Hamcrest</a> </br>
