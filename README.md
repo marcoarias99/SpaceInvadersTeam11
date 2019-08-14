@@ -20,23 +20,39 @@ To be able to play this game a **Java JDK 8 System** is required. <a href  = "ht
 3) Compile: javac Launcher.java </br>
 4) Run: java Launcher </br>
 
+### Eclipse
+1) Download the files from the GitHub **Master** repository</br>
+2) Keep the files on Downloads file </br>
+3) Enter Eclipse and create a "New Project" under the "File" button </br>
+4) Name it as you wish </br>
+5) Go to Import &#8594; General &#8594; File System &#8594; Browse &#8594; Downloads &#8594; SpaceInvadersTeam11-master &#8594; src </br>
+6) Import every file from the src folder to the game </br>
+7) Go to the laucher class "left" click and go to "Run As" then **click** on Java Aplication </br>
+
+If wanted this method can be used to **check Test Classes on Eclipse** </br>
+- Need **JUnit 5** on Eclipse files next to "src" and "Library" </br>
+- Can be done by left clicking on "Project Name" &#8594; Properties &#8594; Java Build Path &#8594; Libraries &#8594; Add Library &#8594; JUnit &#8594; Next &#8594; Finish </br>
+- Just "left" click on any test class and press "Run As" and **click** on JUnit Test </br>
+
 ## Test Class
-For this game we have decided to create a Test class for the java class **Library** </br>
+For this game we have decided to create a Test classes for the java classes **Game**,**Data** and **Window** </br>
 Download <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/3507819/View"> JUnit 4</a> and <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/3507818/View"> Hamcrest</a> </br>
-1) To be able to test this class both **JUnit 4** and **Hamcrest** are needed </br>
+1) To be able to test any of the classes both **JUnit 4** and **Hamcrest** are needed </br>
 2) Put junit-4.12.jar and hamcrest-core-1.3.jar in a folder </br>
-3) Make a copy of test class inside the folder </br>
-4) Add Libary.java to the folder with the JUnit 4, Hamcrest and the test class
+3) Make a copy of **one** of test class inside the same folder you inserted JUnit and Hamcrest</br>
+4) Add the **class you choose** to the folder with the JUnit 4, Hamcrest and the test class
 5) Compile: </br>
-> Mac: javac -cp .:junit-4.12.jar:hamcrest-core-1.3.jar *Library.java  </br>
-> Windows: javac -cp .;junit-4.12.jar:hamcrest-core-1.3.jar * Library.java  </br>
+> For this we choose to show the class **Game** to be tested </br>
+> Mac: javac -cp .:junit-4.12.jar:hamcrest-core-1.3.jar * Game.java  </br>
+> Windows: javac -cp .;junit-4.12.jar:hamcrest-core-1.3.jar * GameTest.java  </br>
 
 6) Run: </br>
 > Mac: java -cp .:junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore Library  </br>
 > Windows:  java -cp .;junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore Library  </br>
   
 ### Controls
-- Press **"left"** or **"right"** arrows on the keyboard for **movement**  </br>
+- Press **"&#8594;"** for right movement
+- Press **"&#8592;"** for left movement </br>
 - Press the spacebar to **"shoot"**  </br>
 
 ## Versions
@@ -56,7 +72,13 @@ Download <a href = "https://d2l.ucalgary.ca/d2l/le/content/265995/viewContent/35
 </br>
 
 **Final Version**
-- NOT SUMBITTED YET
+- Menu Screen and Game Over Screen added </br>
+- Total of 16 levels </br>
+- 5 Different Types of Aliens </br>
+- Abilitiy to Pause Game: exit game or replay game buttons </br>
+- Smoother movement and shooting from both player and alien </br>
+- Game Screen Shows: Time, Expected Time, Accuracy, Enemies Killed, Final Score </br>
+- Extra Points: if level is beaten in less than time expected or had good Accuracy </br>
 
 ## Made By:
 William Nguyen </br>
