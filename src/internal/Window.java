@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 import java.util.List;
 
 public class Window extends Application {
-    public static final String TITLE = "Space Invaders";
+    public static final String TITLE = "Galaxy Fighters";
 package internal;
 
 import java.util.List;
