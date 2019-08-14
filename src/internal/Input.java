@@ -9,7 +9,6 @@ import javafx.scene.input.MouseEvent;
 import java.util.HashMap;
 
 public class Input {
-	//Instance variables
 	private Vector2 mousePosition = new Vector2();
 	private boolean mousePressed = false;
 	private boolean mouseClicked = false;

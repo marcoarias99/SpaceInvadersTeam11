@@ -1,16 +1,14 @@
 package internal;
 
-import data.Level1;
-import data.Level2;
-import screens.GameScreen;
+import java.util.List;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-
-import java.util.List;
+import screens.GameScreen;
 
 public class Window extends Application {
     public static final String TITLE = "Space Invaders";
@@ -53,7 +51,7 @@ public class Window extends Application {
         primaryStage.show();
 
         Game game = new Game(this);
-        game.setScreen(new GameScreen(game, new Level1()));
+        game.setScreen(new MenuScreen(game));
         game.startGameLoop();
     }
 }

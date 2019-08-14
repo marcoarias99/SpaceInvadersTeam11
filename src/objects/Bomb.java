@@ -26,6 +26,6 @@ public class Bomb extends GameObject {
 
 	@Override
 	public String getImageName() {
-		return "resources/bomb.png";
+		return "resources/shot.gif";
 	}
 }
