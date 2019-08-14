@@ -1,12 +1,14 @@
 package data;
 
-import objects.Alien;
-
-import java.util.ArrayList;
+import screens.GameScreen;
 
 public interface Level {
-    void apply(ArrayList<Alien> aliens);
-    void update(ArrayList<Alien> aliens);
+	
+	// Instance variable for level
+	
+	int getExpectedTime();
+    void apply(GameScreen gameScreen);
+    void update(GameScreen gameScreen);
 
     /**
      * Returns the next level to play.
