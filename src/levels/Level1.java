@@ -23,7 +23,7 @@ public class Level1 implements Level {
 
     @Override
     public void update(ArrayList<Alien> aliens) {
-        float bombSpawnChance = 1.2f;
+        float bombSpawnChance = 12.2f;
         if (Math.random() * 100.0f <= bombSpawnChance && aliens.size() > 0) {
             aliens.get((int)((float) Math.random() * (float) aliens.size())).spawnBomb();
         }
