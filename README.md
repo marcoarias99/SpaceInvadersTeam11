@@ -25,7 +25,7 @@ To be able to play this game a **Java JDK 8 System** is required. <a href  = "ht
 2) Keep the files on Downloads file </br>
 3) Enter Eclipse and create a "New Project" under the "File" button </br>
 4) Name it as you wish </br>
-5) Go to Import --> General --> File System --> Browse --> Downloads --> SpaceInvadersTeam11-master --> src </br>
+5) Go to Import --> General --> File System &#8594; Browse --> Downloads --> SpaceInvadersTeam11-master --> src </br>
 6) Import every file from the src folder to the game </br>
 7) Go to the laucher class left click and go to "Run As" then **click** on Java Aplication </br>
 
