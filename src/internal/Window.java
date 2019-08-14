@@ -1,21 +1,5 @@
 package internal;
 
-import data.Level1;
-import data.Level2;
-import screens.GameScreen;
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
-
-import java.util.List;
-
-public class Window extends Application {
-    public static final String TITLE = "Galaxy Fighters";
-package internal;
-
 import java.util.List;
 
 import javafx.application.Application;
@@ -24,8 +8,6 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import screens.GameScreen;
-//JavaFx Imports
 
 /*
 Windows class allows the openning of the file and the Data which 

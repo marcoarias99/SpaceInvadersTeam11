@@ -8,8 +8,6 @@ public class Alien extends GameObject {
     public static final float HEIGHT = 36.0f;
     private float movement_speed = 40.0f;
     private Direction direction = Direction.RIGHT;
-    
-    // Constructor
 
     public Alien(float x, float y) {
         initAlien(x, y);
@@ -63,7 +61,6 @@ public class Alien extends GameObject {
     }
     
     // Setter method for the movement speed of Alien 1
-    
     public void setMovementSpeed(float f) {
     	movement_speed = f;
     }

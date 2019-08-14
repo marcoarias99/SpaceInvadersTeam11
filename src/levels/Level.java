@@ -1,14 +1,13 @@
-package data;
+package levels;
 
 import screens.GameScreen;
 
 public interface Level {
 	
-	// Instance variable for level
-	
 	int getExpectedTime();
     void apply(GameScreen gameScreen);
     void update(GameScreen gameScreen);
+    int getCurrentLevel();
 
     /**
      * Returns the next level to play.

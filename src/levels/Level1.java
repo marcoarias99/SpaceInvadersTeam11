@@ -1,6 +1,4 @@
-package data;
-
-// Imports the Aliens, bomb and screen for level 1
+package levels;
 
 import objects.Alien;
 import objects.Bomb;
@@ -32,21 +30,20 @@ public class Level1 implements Level {
             gameScreen.addBomb(b);
         }
     }
-    
-    //Getter for next level, updates and proceeds to level 2 if level 1 has been won...
-
 
     @Override
     public Level getNextLevel() {
         return new Level2();
     }
-    
-	//Getter for expected time, sets it as 10 seconds for level 1
-
 
 	public int getExpectedTime() {
 		// TODO Auto-generated method stub
 		return 10;
 	}
-}
 
+	@Override
+	public int getCurrentLevel() {
+		// TODO Auto-generated method stub
+		return 1;
+	}
+}

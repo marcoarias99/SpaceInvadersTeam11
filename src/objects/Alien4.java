@@ -1,8 +1,8 @@
 package objects;
 
-public class Alien2 extends Alien {
+public class Alien4 extends Alien {
 
-	public Alien2(float x, float y) {
+	public Alien4(float x, float y) {
 		super(x, y);
 		// TODO Auto-generated constructor stub
 	}
@@ -17,18 +17,19 @@ public class Alien2 extends Alien {
 	@Override
 	public Bomb getNewBomb() {
 		Bomb b = super.getNewBomb();
-		b.setSpeed(375.0f);
+		b.setSpeed(200.0f);
 		return b;
 	}
 	
 	@Override
 	public String getImageName() {
-		return "resources/invader1.png";
+		return "resources/images.png";
 	}
 	
 	@Override
 	public int getPoints() {
-		return 10;
+		return 50;
 	}
 	
 }
+
