@@ -27,7 +27,12 @@ To be able to play this game a **Java JDK 8 System** is required. <a href  = "ht
 4) Name it as you wish </br>
 5) Go to Import &#8594; General &#8594; File System &#8594; Browse &#8594; Downloads &#8594; SpaceInvadersTeam11-master &#8594; src </br>
 6) Import every file from the src folder to the game </br>
-7) Go to the laucher class left click and go to "Run As" then **click** on Java Aplication </br>
+7) Go to the laucher class "left" click and go to "Run As" then **click** on Java Aplication </br>
+
+If wanted this method can be used to check the Test Classes </br>
+- Need **JUnit 5** on Eclipse files next to "src" and "Library" </br>
+- Can be done by left clicking on "Project Name" &#8594; Properties &#8594; Java Build Path &#8594; Libraries &#8594; Add Library &#8594; JUnit &#8594; Next &#8594; Finish </br>
+- Just "left" click on any test class and press "Run As" and **click** on JUnit Test </br>
 
 ## Test Class
 For this game we have decided to create a Test classes for the java classes **Game**,**Data** and **Window** </br>
